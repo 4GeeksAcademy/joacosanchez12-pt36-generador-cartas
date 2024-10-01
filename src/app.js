@@ -29,7 +29,6 @@ window.onload = function() {
 
   generarCarta();
 
-  // Asocia el evento al botón
   document
     .getElementById("generarCarta")
     .addEventListener("click", generarCarta);
