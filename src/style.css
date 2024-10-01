@@ -1,1 +1,62 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
+body {
+  background-color: rgb(8, 211, 8);
+  font-family: "Arial", sans-serif;
+}
+
+.card {
+  background-color: white;
+  text-align: center;
+  border: 2px solid #ccc;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  width: 200px;
+  height: 300px;
+  /margin: 20px auto; /* Centrar la carta en el contenedor */
+  transition: transform 0.2s; /* Efecto de transformación al pasar el ratón */
+}
+
+.card:hover {
+  transform: scale(1.05); /* Aumentar tamaño al pasar el ratón */
+}
+
+.top-suit {
+  position: absolute;
+  top: 10px; /* Ajustar posición */
+  left: 15px;
+  font-size: 50px; /* Tamaño del símbolo del palo */
+}
+
+.number {
+  position: absolute;
+  top: 50%; /* Centrar verticalmente */
+  left: 50%; /* Centrar horizontalmente */
+  transform: translate(-50%, -50%); /* Ajustar la posición */
+  font-size: 60px; /* Tamaño del número */
+  font-weight: bold; /* Negrita */
+}
+
+.bottom-suit {
+  position: absolute;
+  bottom: 10px; /* Ajustar posición */
+  right: 15px;
+  font-size: 50px; /* Tamaño del símbolo del palo */
+  transform: rotate(180deg);
+}
+
+button {
+  padding: 10px 20px; /* Espaciado interno del botón */
+  font-size: 16px; /* Tamaño de la fuente */
+  background-color: #007bff; /* Color de fondo del botón */
+  color: white; /* Color del texto del botón */
+  border: none; /* Sin borde */
+  border-radius: 5px; /* Bordes redondeados */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+  transition: background-color 0.3s; /* Efecto de transición */
+}
+
+button:hover {
+  background-color: #0056b3; /* Color del botón al pasar el ratón */
+}

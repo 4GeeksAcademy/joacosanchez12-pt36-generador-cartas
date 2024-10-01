@@ -3,27 +3,41 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Rigo with Vanilla.js</title>
+    <title>Generador De Cartas</title>
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
       integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
       crossorigin="anonymous"
     />
-    <link rel="shortcut icon" href="./4geeks.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
+      <div
+        class="card m-x mt-4 container display-inline-block"
+        style="width: 19rem; height: 27rem;"
+      >
+        <div class="top-suit">&diamond;</div>
+        <div class="number">2</div>
+        <div class="bottom-suit">&diamond;</div>
       </div>
+      <button id="generarCarta" style="margin-top: 20px;">
+        Generar Nueva Carta
+      </button>
     </div>
+    <script src="app.js"></script>
+    <script>
+      document
+        .getElementById("generarCarta")
+        .addEventListener("click", function() {
+          alert("Generar nueva carta aquí!");
+        });
+    </script>
   </body>
 </html>
